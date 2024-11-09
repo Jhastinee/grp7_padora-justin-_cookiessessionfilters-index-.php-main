@@ -1,0 +1,224 @@
+.group-name {
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.group-description {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.team-member {
+  position: relative;
+  border: 1px solid transparent;
+  padding: 20px;
+  width: 250px;
+  margin-bottom: 20px;
+  text-align: center;
+  transition: border-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.team-member img {
+  width: 100%; /* Image will take full width of the container */
+  height: 500px; /* Maintain the aspect ratio */
+  max-width: 250px; /* Optional: limit the image size */
+  max-height: 500px; /* Ensure the image doesn't exceed certain height */
+  object-fit: cover; /* Ensures that the image scales properly and avoids distortion */
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 70px;
+  border-color: violet;
+}
+
+/* Hide details by default */
+.team-member h2,
+.team-member .role-label,
+.team-member .role,
+.team-member .contact-label,
+.team-member .contact,
+.team-member .bio-label,
+.team-member .bio {
+  opacity: 0;
+  max-height: 0;
+  transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
+}
+
+/* Hover effect to show the details */
+.team-member:hover {
+  border-color: #23a6d5; /* Highlight border color on hover */
+  transform: scale(1.05); /* Slight scaling on hover */
+}
+
+.team-member:hover img {
+  transform: scale(1.1); /* Slightly enlarge the image on hover */
+}
+
+.team-member:hover h2,
+.team-member:hover .role-label,
+.team-member:hover .role,
+.team-member:hover .contact-label,
+.team-member:hover .contact,
+.team-member:hover .bio-label,
+.team-member:hover .bio {
+  opacity: 1;
+  max-height: 100px; /* Show the content on hover */
+}
+
+.manage {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px 15px;
+  background-color: #23a6d5;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.manage:hover {
+  background-color: #e73c7e;
+}
+
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+footer {
+  display: flex;
+}
+
+.footerLeft {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.fMenuTitle {
+  font-size: 16px;
+}
+
+.fList {
+  padding: 0;
+  list-style: none;
+}
+
+.fListItem {
+  margin-bottom: 10px;
+  color: rgb(15, 15, 15);
+  cursor: pointer;
+}
+
+.footerRight {
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fInput {
+  padding: 5px;
+}
+
+.fButton {
+  padding: 5px;
+  background-color: black;
+  color: white;
+}
+
+.fIcons{
+  display: flex;
+}
+
+.fIcon{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.copyright{
+  font-weight: 300;
+  font-size: 14px;
+}
+
+
+  .search{
+    display: none;
+  }
+
+  .navBottom{
+    flex-wrap: wrap;
+  }
+
+  .menuItem{
+    margin: 20px;
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+
+footer{
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerLeft{
+  padding: 20px;
+  width: 90%;
+  color: rgb(5, 5, 5);
+}
+
+.footerRight{
+  padding: 20px;
+  width: 90%;
+  align-items: center;
+  
+}
+
+.payment{
+  width: 90%;
+  padding: 20px;
+}
+
+body {
+font-family: Arial;
+font-size: 17px;
+padding: 8px;
+}
+
+* {
+box-sizing: border-box;
+}
